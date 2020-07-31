@@ -20,7 +20,7 @@ class Singly_Linked_List {
                 Node<T> *head;
                 Node<T> *tail;
         public:
-                Singly_Linked_List() { head = tail = nullptr;};
+                Singly_Linked_List() { head = tail = nullptr; size = 0;};
                 ~Singly_Linked_List();
                 int Valid(int index);
                 int Size() {return size;};
@@ -36,7 +36,7 @@ class Singly_Linked_List {
                 void Delete(int index);
                 T Value_n_from_end(int n);
                 void Reverse();
-                void Remove_value(T value);
+                bool Remove_value(T value);
 
 
 };
